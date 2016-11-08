@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-message.component.css']
 })
 export class ShowMessageComponent implements OnInit {
+ 
+ clickMessage: string = "";
 
   constructor() { }
 
+  onClickMe(myMessage: string){
+    this.clickMessage = myMessage;
+  }
+  
   ngOnInit() {
   }
 
